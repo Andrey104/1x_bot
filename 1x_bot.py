@@ -7,8 +7,8 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     return '1x_parse<br>' \
-           '/h - Гандбол<br>' \
-           '/b - Баскетбол<br>'
+           '<a href="/h"> /h - Гандбол</a> <br> ' \
+           '<a href="/b">/b - Баскетбол</a> <br>'
 
 
 @app.route('/h')

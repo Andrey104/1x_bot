@@ -94,7 +94,7 @@ def parse_handball_html():
     contents = urllib.request.urlopen(url).read()
     contents_dict = json.loads(contents)
     value = contents_dict.get('Value')
-    res = ''
+    res = 'ГАНДБОЛ <br>'
     k = 0
     for i in value:
         e = i.get('E')
@@ -116,7 +116,7 @@ def parse_basket_html():
     contents = urllib.request.urlopen(url).read()
     contents_dict = json.loads(contents)
     value = contents_dict.get('Value')
-    res = ''
+    res = 'БАСКЕТБОЛ <br>'
     k = 0
     for i in value:
         e = i.get('E')
